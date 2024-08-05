@@ -1,0 +1,31 @@
+// 定义proto文件的语法版本
+syntax = "proto3";
+// 定义一个包
+package example;
+
+// 生成的代码中包含服务
+option cc_generic_services = true;
+// 定义一个消息
+message Result {
+    int32 code = 1;
+    string message = 2;
+}
+
+// 定义一个请求消息
+message LoginRequest {
+    string username = 1;
+    string password = 2;
+}
+
+// 定义一个响应消息
+message LoginResponse {
+    Result result = 1;
+    bool success = 2;
+}
+
+// 定义一个服务
+service UserServiceRpc {
+    rpc login(LoginRequest) returns (LoginResponse);
+}
+
+
