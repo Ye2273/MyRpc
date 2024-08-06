@@ -1,5 +1,5 @@
 # MyRpc分布式框架
-
+> 关于项目的笔记：https://blog.csdn.net/weixin_67134938/article/details/140951712
 ## 安装使用
 
 > 环境：Ubuntu 20.0.1、C++
