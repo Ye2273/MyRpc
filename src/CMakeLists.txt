@@ -3,7 +3,7 @@
 set(SRC_LIST MyRpcChannel.cpp MyRpcApplication.cpp 
                         MyRpcProvider.cpp MyRpcConf.cpp 
                         MyRpcMessage.pb.cc MyRpcLogger.cpp
-                        MyRpcZooKeeper.cpp) 
+                        MyRpcZooKeeper.cpp MyRpcController.cpp) 
 
 # 生成动态库MyRpc
 add_library(MyRpc STATIC ${SRC_LIST})
