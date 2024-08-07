@@ -1,5 +1,5 @@
 # MyRpc分布式框架
-
+> 关于项目的笔记：https://blog.csdn.net/weixin_67134938/article/details/140951712
 ## 安装使用
 
 > 环境：Ubuntu 20.0.1、C++
@@ -31,7 +31,7 @@
 
 ## MyRpc框架
 
-![image-20240805202945851](README.assets/image-20240805202945851.png)
+![image-20240805202945851](https://github.com/Ye2273/MyRpc/blob/master/png/image-20240805202945851.png)
 
 黄色部分：设计rpc方法参数的打包和解析，也就是数据的序列化和反序列化，使用Protobuf。
 
@@ -41,6 +41,6 @@
 
 ## 整个框架运作过程
 
-<img src="README.assets/image-20240805203909945.png" alt="image-20240805203909945" style="zoom: 80%;" />
+<img src="https://github.com/Ye2273/MyRpc/blob/master/png/image-20240805203909945.png" alt="image-20240805203909945" style="zoom: 80%;" />
 
 > **仅作学习之用~**
