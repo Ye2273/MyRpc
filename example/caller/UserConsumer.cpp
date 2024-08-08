@@ -30,11 +30,5 @@ int main(int argc, char **argv)
     {
         std::cout << "login failed: " << response.result().message() << std::endl;
     }
-
-
-
-
-
-
     return 0;
 }

@@ -38,8 +38,6 @@ void MyRpcApplication::Init(int argc, char **argv)
     // std::cout << "rpcserverip=" << ip << std::endl;
     // std::cout << "rpcserverport=" << port << std::endl;
 
-
-
 }
 
 MyRpcApplication* MyRpcApplication::app_ = nullptr;
