@@ -13,6 +13,10 @@ MyRpcConf.h
 ../src/include/MyRpcConf.h
 memory
 -
+MyRpcChannel.h
+../src/include/MyRpcChannel.h
+MyRpcController.h
+../src/include/MyRpcController.h
 
 ../src/include/MyRpcChannel.h
 iostream
@@ -38,6 +42,12 @@ MyRpcApplication.h
 iostream
 -
 unordered_map
+-
+
+../src/include/MyRpcController.h
+google/protobuf/service.h
+-
+string
 -
 
 ../src/include/MyRpcLogQue.h
@@ -155,6 +165,10 @@ fstream
 -
 MyRpcLogger.h
 /home/ye/MyRpc/src/MyRpcLogger.h
+
+/home/ye/MyRpc/src/MyRpcController.cpp
+MyRpcController.h
+/home/ye/MyRpc/src/MyRpcController.h
 
 /home/ye/MyRpc/src/MyRpcLogger.cpp
 MyRpcLogger.h

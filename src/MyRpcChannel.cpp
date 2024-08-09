@@ -44,7 +44,9 @@ void MyRpcChannel::CallMethod(const google::protobuf::MethodDescriptor *method,
     else
     {
         // std::cout << "serialize rpcRequest error!" << std::endl;
-        LOG_ERROR("serialize rpcRequest error!");
+        // LOG_ERROR("serialize rpcRequest error!");
+        controller->SetFailed("serialize rpcRequest error!");
+        return;
     }
 
     // 8. 组装待发送的rpc请求字符串
@@ -58,8 +60,8 @@ void MyRpcChannel::CallMethod(const google::protobuf::MethodDescriptor *method,
     if(clientFd == -1)
     {
         // std::cout << "create socket error!" << std::endl;
-        LOG_ERROR("create rpc request socket error!");
-        close(clientFd);
+        // LOG_ERROR("create rpc request socket error!");
+        controller->SetFailed("create rpc request socket error!");
         return;
     }
     // // 10. 从配置文件中读取rpcserver的ip和端口号
@@ -73,7 +75,8 @@ void MyRpcChannel::CallMethod(const google::protobuf::MethodDescriptor *method,
     if(hostData == "")
     {
         // std::cout << "get rpc server ip and port error!" << std::endl;
-        LOG_ERROR("get rpc server ip and port error!");
+        // LOG_ERROR("get rpc server ip and port error!");
+        controller->SetFailed("get rpc server ip and port error!");
         close(clientFd);
         return;
     }
@@ -92,7 +95,8 @@ void MyRpcChannel::CallMethod(const google::protobuf::MethodDescriptor *method,
     if (connect(clientFd, (struct sockaddr *)&serverAddr, sizeof(serverAddr)) == -1)
     {
         // std::cout << "connect error!" << std::endl;
-        LOG_ERROR("rpc request connect error!");
+        // LOG_ERROR("rpc request connect error!");
+        controller->SetFailed("rpc request connect error!");
         close(clientFd);
         return;
     }
@@ -100,7 +104,8 @@ void MyRpcChannel::CallMethod(const google::protobuf::MethodDescriptor *method,
     if(send(clientFd, send_str.c_str(), send_str.size(), 0) == -1)
     {
         // std::cout << "send error!" << std::endl;
-        LOG_ERROR("send rpc request error!");
+        // LOG_ERROR("send rpc request error!");
+        controller->SetFailed("send rpc request error!");
         close(clientFd);
         return;
     }
@@ -111,7 +116,8 @@ void MyRpcChannel::CallMethod(const google::protobuf::MethodDescriptor *method,
     if(recvLen == -1)
     {
         // std::cout << "recv error!" << std::endl;
-        LOG_ERROR("recv rpc response error!");
+        // LOG_ERROR("recv rpc response error!");
+        controller->SetFailed("recv rpc response error!");
         close(clientFd);
         return;
     }
@@ -121,7 +127,8 @@ void MyRpcChannel::CallMethod(const google::protobuf::MethodDescriptor *method,
     if(!response->ParseFromString(response_str))
     {
         // std::cout << "parse response error!" << std::endl;
-        LOG_ERROR("parse rpc response error!");
+        // LOG_ERROR("parse rpc response error!");
+        controller->SetFailed("parse rpc response error!");
         close(clientFd);
         return;
     }

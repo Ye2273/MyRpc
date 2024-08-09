@@ -4,6 +4,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/MyRpc.dir/MyRpcApplication.cpp.o"
   "CMakeFiles/MyRpc.dir/MyRpcChannel.cpp.o"
   "CMakeFiles/MyRpc.dir/MyRpcConf.cpp.o"
+  "CMakeFiles/MyRpc.dir/MyRpcController.cpp.o"
   "CMakeFiles/MyRpc.dir/MyRpcLogger.cpp.o"
   "CMakeFiles/MyRpc.dir/MyRpcMessage.pb.cc.o"
   "CMakeFiles/MyRpc.dir/MyRpcProvider.cpp.o"

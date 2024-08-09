@@ -2,6 +2,8 @@
 #include <iostream>
 #include "MyRpcConf.h"
 #include <memory>
+#include "MyRpcChannel.h"
+#include "MyRpcController.h"
 /* 
     rpc框架的应用层初始化类
  */

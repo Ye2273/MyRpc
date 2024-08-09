@@ -206,6 +206,33 @@ MyRpcConf.cpp.s:
 	cd /home/ye/MyRpc/build && $(MAKE) -f src/CMakeFiles/MyRpc.dir/build.make src/CMakeFiles/MyRpc.dir/MyRpcConf.cpp.s
 .PHONY : MyRpcConf.cpp.s
 
+MyRpcController.o: MyRpcController.cpp.o
+
+.PHONY : MyRpcController.o
+
+# target to build an object file
+MyRpcController.cpp.o:
+	cd /home/ye/MyRpc/build && $(MAKE) -f src/CMakeFiles/MyRpc.dir/build.make src/CMakeFiles/MyRpc.dir/MyRpcController.cpp.o
+.PHONY : MyRpcController.cpp.o
+
+MyRpcController.i: MyRpcController.cpp.i
+
+.PHONY : MyRpcController.i
+
+# target to preprocess a source file
+MyRpcController.cpp.i:
+	cd /home/ye/MyRpc/build && $(MAKE) -f src/CMakeFiles/MyRpc.dir/build.make src/CMakeFiles/MyRpc.dir/MyRpcController.cpp.i
+.PHONY : MyRpcController.cpp.i
+
+MyRpcController.s: MyRpcController.cpp.s
+
+.PHONY : MyRpcController.s
+
+# target to generate assembly for a file
+MyRpcController.cpp.s:
+	cd /home/ye/MyRpc/build && $(MAKE) -f src/CMakeFiles/MyRpc.dir/build.make src/CMakeFiles/MyRpc.dir/MyRpcController.cpp.s
+.PHONY : MyRpcController.cpp.s
+
 MyRpcLogger.o: MyRpcLogger.cpp.o
 
 .PHONY : MyRpcLogger.o
@@ -332,6 +359,9 @@ help:
 	@echo "... MyRpcConf.o"
 	@echo "... MyRpcConf.i"
 	@echo "... MyRpcConf.s"
+	@echo "... MyRpcController.o"
+	@echo "... MyRpcController.i"
+	@echo "... MyRpcController.s"
 	@echo "... MyRpcLogger.o"
 	@echo "... MyRpcLogger.i"
 	@echo "... MyRpcLogger.s"

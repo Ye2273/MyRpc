@@ -24,8 +24,8 @@ MyRpcLogger::MyRpcLogger() {
                 
                 // snprintf(logFileName, 128, "%d-%02d-%02d.log", local->tm_year + 1900, local->tm_mon + 1, local->tm_mday);
                 // 日志文件名格式：./log/2021-07-01.log
-                snprintf(logFileName, 128, "./log/%d-%02d-%02d.log", local->tm_year + 1900, local->tm_mon + 1, local->tm_mday);
-
+                snprintf(logFileName, 128, "%d-%02d-%02d.log", local->tm_year + 1900, local->tm_mon + 1, local->tm_mday);
+            
                 // 写入文件
                 FILE *fp = fopen(logFileName, "a+");
                 if (fp == nullptr)

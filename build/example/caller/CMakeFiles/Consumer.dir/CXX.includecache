@@ -53,6 +53,10 @@ MyRpcConf.h
 ../src/include/MyRpcConf.h
 memory
 -
+MyRpcChannel.h
+../src/include/MyRpcChannel.h
+MyRpcController.h
+../src/include/MyRpcController.h
 
 ../src/include/MyRpcChannel.h
 iostream
@@ -78,6 +82,12 @@ MyRpcApplication.h
 iostream
 -
 unordered_map
+-
+
+../src/include/MyRpcController.h
+google/protobuf/service.h
+-
+string
 -
 
 ../src/include/MyRpcMessage.pb.h

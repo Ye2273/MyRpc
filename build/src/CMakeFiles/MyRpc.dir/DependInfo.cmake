@@ -7,6 +7,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/ye/MyRpc/src/MyRpcApplication.cpp" "/home/ye/MyRpc/build/src/CMakeFiles/MyRpc.dir/MyRpcApplication.cpp.o"
   "/home/ye/MyRpc/src/MyRpcChannel.cpp" "/home/ye/MyRpc/build/src/CMakeFiles/MyRpc.dir/MyRpcChannel.cpp.o"
   "/home/ye/MyRpc/src/MyRpcConf.cpp" "/home/ye/MyRpc/build/src/CMakeFiles/MyRpc.dir/MyRpcConf.cpp.o"
+  "/home/ye/MyRpc/src/MyRpcController.cpp" "/home/ye/MyRpc/build/src/CMakeFiles/MyRpc.dir/MyRpcController.cpp.o"
   "/home/ye/MyRpc/src/MyRpcLogger.cpp" "/home/ye/MyRpc/build/src/CMakeFiles/MyRpc.dir/MyRpcLogger.cpp.o"
   "/home/ye/MyRpc/src/MyRpcMessage.pb.cc" "/home/ye/MyRpc/build/src/CMakeFiles/MyRpc.dir/MyRpcMessage.pb.cc.o"
   "/home/ye/MyRpc/src/MyRpcProvider.cpp" "/home/ye/MyRpc/build/src/CMakeFiles/MyRpc.dir/MyRpcProvider.cpp.o"

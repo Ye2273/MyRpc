@@ -3,12 +3,16 @@
 
 src/CMakeFiles/MyRpc.dir/MyRpcApplication.cpp.o
  ../src/include/MyRpcApplication.h
+ ../src/include/MyRpcChannel.h
  ../src/include/MyRpcConf.h
+ ../src/include/MyRpcController.h
+ ../src/include/MyRpcMessage.pb.h
  /home/ye/MyRpc/src/MyRpcApplication.cpp
 src/CMakeFiles/MyRpc.dir/MyRpcChannel.cpp.o
  ../src/include/MyRpcApplication.h
  ../src/include/MyRpcChannel.h
  ../src/include/MyRpcConf.h
+ ../src/include/MyRpcController.h
  ../src/include/MyRpcLogQue.h
  ../src/include/MyRpcLogger.h
  ../src/include/MyRpcMessage.pb.h
@@ -19,6 +23,9 @@ src/CMakeFiles/MyRpc.dir/MyRpcConf.cpp.o
  ../src/include/MyRpcLogQue.h
  ../src/include/MyRpcLogger.h
  /home/ye/MyRpc/src/MyRpcConf.cpp
+src/CMakeFiles/MyRpc.dir/MyRpcController.cpp.o
+ ../src/include/MyRpcController.h
+ /home/ye/MyRpc/src/MyRpcController.cpp
 src/CMakeFiles/MyRpc.dir/MyRpcLogger.cpp.o
  ../src/include/MyRpcLogQue.h
  ../src/include/MyRpcLogger.h
@@ -28,7 +35,9 @@ src/CMakeFiles/MyRpc.dir/MyRpcMessage.pb.cc.o
  /home/ye/MyRpc/src/MyRpcMessage.pb.cc
 src/CMakeFiles/MyRpc.dir/MyRpcProvider.cpp.o
  ../src/include/MyRpcApplication.h
+ ../src/include/MyRpcChannel.h
  ../src/include/MyRpcConf.h
+ ../src/include/MyRpcController.h
  ../src/include/MyRpcLogQue.h
  ../src/include/MyRpcLogger.h
  ../src/include/MyRpcMessage.pb.h
@@ -37,8 +46,11 @@ src/CMakeFiles/MyRpc.dir/MyRpcProvider.cpp.o
  /home/ye/MyRpc/src/MyRpcProvider.cpp
 src/CMakeFiles/MyRpc.dir/MyRpcZooKeeper.cpp.o
  ../src/include/MyRpcApplication.h
+ ../src/include/MyRpcChannel.h
  ../src/include/MyRpcConf.h
+ ../src/include/MyRpcController.h
  ../src/include/MyRpcLogQue.h
  ../src/include/MyRpcLogger.h
+ ../src/include/MyRpcMessage.pb.h
  ../src/include/MyRpcZooKeeper.h
  /home/ye/MyRpc/src/MyRpcZooKeeper.cpp

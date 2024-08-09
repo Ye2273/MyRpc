@@ -6,6 +6,7 @@ example/caller/CMakeFiles/Consumer.dir/UserConsumer.cpp.o
  ../src/include/MyRpcApplication.h
  ../src/include/MyRpcChannel.h
  ../src/include/MyRpcConf.h
+ ../src/include/MyRpcController.h
  ../src/include/MyRpcMessage.pb.h
  /home/ye/MyRpc/example/caller/UserConsumer.cpp
 example/caller/CMakeFiles/Consumer.dir/__/UserProto.pb.cc.o

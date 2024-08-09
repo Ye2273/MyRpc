@@ -5,6 +5,7 @@ example/caller/CMakeFiles/Consumer.dir/UserConsumer.cpp.o: ../example/UserProto.
 example/caller/CMakeFiles/Consumer.dir/UserConsumer.cpp.o: ../src/include/MyRpcApplication.h
 example/caller/CMakeFiles/Consumer.dir/UserConsumer.cpp.o: ../src/include/MyRpcChannel.h
 example/caller/CMakeFiles/Consumer.dir/UserConsumer.cpp.o: ../src/include/MyRpcConf.h
+example/caller/CMakeFiles/Consumer.dir/UserConsumer.cpp.o: ../src/include/MyRpcController.h
 example/caller/CMakeFiles/Consumer.dir/UserConsumer.cpp.o: ../src/include/MyRpcMessage.pb.h
 example/caller/CMakeFiles/Consumer.dir/UserConsumer.cpp.o: ../example/caller/UserConsumer.cpp
 

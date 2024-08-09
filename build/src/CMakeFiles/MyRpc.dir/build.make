@@ -148,6 +148,19 @@ src/CMakeFiles/MyRpc.dir/MyRpcZooKeeper.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MyRpc.dir/MyRpcZooKeeper.cpp.s"
 	cd /home/ye/MyRpc/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ye/MyRpc/src/MyRpcZooKeeper.cpp -o CMakeFiles/MyRpc.dir/MyRpcZooKeeper.cpp.s
 
+src/CMakeFiles/MyRpc.dir/MyRpcController.cpp.o: src/CMakeFiles/MyRpc.dir/flags.make
+src/CMakeFiles/MyRpc.dir/MyRpcController.cpp.o: ../src/MyRpcController.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ye/MyRpc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object src/CMakeFiles/MyRpc.dir/MyRpcController.cpp.o"
+	cd /home/ye/MyRpc/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MyRpc.dir/MyRpcController.cpp.o -c /home/ye/MyRpc/src/MyRpcController.cpp
+
+src/CMakeFiles/MyRpc.dir/MyRpcController.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MyRpc.dir/MyRpcController.cpp.i"
+	cd /home/ye/MyRpc/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ye/MyRpc/src/MyRpcController.cpp > CMakeFiles/MyRpc.dir/MyRpcController.cpp.i
+
+src/CMakeFiles/MyRpc.dir/MyRpcController.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MyRpc.dir/MyRpcController.cpp.s"
+	cd /home/ye/MyRpc/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ye/MyRpc/src/MyRpcController.cpp -o CMakeFiles/MyRpc.dir/MyRpcController.cpp.s
+
 # Object files for target MyRpc
 MyRpc_OBJECTS = \
 "CMakeFiles/MyRpc.dir/MyRpcChannel.cpp.o" \
@@ -156,7 +169,8 @@ MyRpc_OBJECTS = \
 "CMakeFiles/MyRpc.dir/MyRpcConf.cpp.o" \
 "CMakeFiles/MyRpc.dir/MyRpcMessage.pb.cc.o" \
 "CMakeFiles/MyRpc.dir/MyRpcLogger.cpp.o" \
-"CMakeFiles/MyRpc.dir/MyRpcZooKeeper.cpp.o"
+"CMakeFiles/MyRpc.dir/MyRpcZooKeeper.cpp.o" \
+"CMakeFiles/MyRpc.dir/MyRpcController.cpp.o"
 
 # External object files for target MyRpc
 MyRpc_EXTERNAL_OBJECTS =
@@ -168,9 +182,10 @@ MyRpc_EXTERNAL_OBJECTS =
 ../lib/libMyRpc.a: src/CMakeFiles/MyRpc.dir/MyRpcMessage.pb.cc.o
 ../lib/libMyRpc.a: src/CMakeFiles/MyRpc.dir/MyRpcLogger.cpp.o
 ../lib/libMyRpc.a: src/CMakeFiles/MyRpc.dir/MyRpcZooKeeper.cpp.o
+../lib/libMyRpc.a: src/CMakeFiles/MyRpc.dir/MyRpcController.cpp.o
 ../lib/libMyRpc.a: src/CMakeFiles/MyRpc.dir/build.make
 ../lib/libMyRpc.a: src/CMakeFiles/MyRpc.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ye/MyRpc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX static library ../../lib/libMyRpc.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ye/MyRpc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX static library ../../lib/libMyRpc.a"
 	cd /home/ye/MyRpc/build/src && $(CMAKE_COMMAND) -P CMakeFiles/MyRpc.dir/cmake_clean_target.cmake
 	cd /home/ye/MyRpc/build/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/MyRpc.dir/link.txt --verbose=$(VERBOSE)
 
